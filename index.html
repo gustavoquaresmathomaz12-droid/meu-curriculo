@@ -4,122 +4,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Quaresma</title>
+    <title>Gustavo Quaresma - Portfólio / Currículo</title>
     <style>
-        img {
-            margin-left: 25px;
+        /* Reset básico e tipografia */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Container principal estilo cartão */
+        .card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Cabeçalho */
+        header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #1a252f;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #34495e;
+            margin-top: 15px;
+        }
+
+        /* Alinhamento de Ícones e Links */
+        .redes-container,
         .localizacao {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            margin-bottom: 12px;
         }
 
-        /* Classe para alinhar o título e dar espaço entre os ícones */
-        .redes-container {
-            display: flex;
-            align-items: center;
-            gap: 15px; /* Espaço de 15px entre o título e cada ícone */
+        .redes-container img,
+        .localizacao img {
+            border-radius: 4px;
+            transition: transform 0.2s ease;
         }
 
-        /* Remove a margem esquerda padrão das imagens dentro das redes */
-        .redes-container img {
-            margin-left: 0;
+        .redes-container a:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Listas */
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Destaques de cargos e instituições */
+        .item-formacao,
+        .item-experiencia {
+            margin-bottom: 15px;
+        }
+
+        .subtitulo {
+            color: #555;
+            font-size: 0.95em;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Gustavo Quaresma</h1>
+    <div class="card">
+        <header>
+            <h1>Gustavo Quaresma</h1>
 
-    <div class="redes-container">
-        <h2>Minhas redes:</h2>
-        <a href="https://wa.me/5513974028152" target="_blank">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8PGhuHl2WRB-DEnAPF-t7kqwAc4P453BnE_vtm76mBw&s=10" height="40" width="40">
-        </a>
-        <a href="https://www.linkedin.com/in/gustavo-quaresma-2b0591396" target="_blank">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBBpn4snpTRIUzg_X9WKLKLDQ3YvIX24KWH7fQE2v2JA&s=10" height="40" width="40">
-        </a>
+            <div class="localizacao">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJUH55jBHtKQZxRhM8jsSUh4i_aUhSYrDqS0cK2j1Hw&s=10" alt="Ícone de Localização" width="24" height="24">
+                <span>Guarujá - SP</span>
+            </div>
+
+            <div class="redes-container">
+                <strong>Minhas redes:</strong>
+                <a href="https://wa.me/5513974028152" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8PGhuHl2WRB-DEnAPF-t7kqwAc4P453BnE_vtm76mBw&s=10" alt="WhatsApp" width="32" height="32">
+                </a>
+                <a href="https://www.linkedin.com/in/gustavo-quaresma-2b0591396" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBBpn4snpTRIUzg_X9WKLKLDQ3YvIX24KWH7fQE2v2JA&s=10" alt="LinkedIn" width="32" height="32">
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h2>Resumo Profissional</h2>
+                <p>
+                    <strong>Estagiário de TI | Suporte Técnico & Infraestrutura</strong><br>
+                    Estagiário na área de Tecnologia da Informação, com atuação prática em suporte técnico aos usuários, manutenção e diagnóstico de computadores. Responsável pela preparação e montagem de infraestrutura tecnológica em salas de aula para professores, utilizando ferramentas como o Veyon Master para gestão de laboratórios e computadores. Experiência no manuseio de equipamentos como notebooks LM, diagnóstico de hardware/software e resolução de problemas do dia a dia. Proativo, focado na melhoria de processos e em constante evolução no desenvolvimento e gestão de TI.
+                </p>
+            </section>
+
+            <section>
+                <h2>Formação Acadêmica & Idiomas</h2>
+                <div class="item-formacao">
+                    <h3>Universidade Santa Cecília</h3>
+                    <p class="subtitulo">Bacharelado em Sistemas de Informação (Ensino Superior em andamento — Conclusão prevista para 2029)</p>
+                </div>
+
+                <div class="item-formacao">
+                    <h3>Colégio Ômega</h3>
+                    <p class="subtitulo">Ensino Médio Concluído em 2025</p>
+                </div>
+
+                <div class="item-formacao">
+                    <h3>Green House</h3>
+                    <p class="subtitulo">Inglês Básico</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Experiência Profissional</h2>
+                <div class="item-experiencia">
+                    <h3>Estagiário de TI — Colégio Adélia</h3>
+                    <p class="subtitulo"><strong>Período:</strong> Setembro/2026 — Presente</p>
+                    <ul>
+                        <li>Suporte Técnico e Infraestrutura: Atendimento a usuários, manutenção de computadores, preparação de salas de aula e gerenciamento de laboratórios.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Hard Skills (Competências Técnicas)</h2>
+                <ul>
+                    <li>Lógica de programação e conhecimento em C#</li>
+                    <li>Conhecimento em Inteligência Artificial (IA)</li>
+                    <li>Montagem e Manutenção de Computadores: Diagnóstico, montagem e correção de falhas de hardware e software</li>
+                    <li>Suporte Técnico N1: Atendimento a alunos, professores e administrativo; formatação, instalação de drivers e softwares</li>
+                    <li>Suporte Remoto: Resolução de problemas via AnyDesk</li>
+                    <li>Redes de Computadores: Crimpagem, reparo de cabos, configuração e testes de conectividade</li>
+                    <li>Infraestrutura: Montagem de salas de aula, instalação e configuração de notebooks e projetores</li>
+                    <li>Gerenciamento de Laboratórios: Monitoramento com Veyon Master</li>
+                    <li>Sistemas de Segurança (CFTV): Monitoramento via iVMS-4200 (Hikvision)</li>
+                    <li>Apoio à Gestão de TI: Organização de almoxarifado, inventário e preparação de equipamentos</li>
+                    <li>Pacote Office e Design no Canva</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Soft Skills (Competências Comportamentais)</h2>
+                <ul>
+                    <li>Trabalho em equipe e comunicação eficaz</li>
+                    <li>Organização e pontualidade</li>
+                    <li>Proatividade e vontade constante de aprender</li>
+                    <li>Capacidade de trabalhar sob pressão</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Outras Experiências e Operações</h2>
+                <ul>
+                    <li>Atendimento ao Cliente</li>
+                    <li>Operação e Produção</li>
+                    <li>Gestão de Caixa</li>
+                    <li>Controle de Estoque</li>
+                </ul>
+            </section>
+        </main>
     </div>
 
-    <div class="localizacao">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJUH55jBHtKQZxRhM8jsSUh4i_aUhSYrDqS0cK2j1Hw&s=10" height="40" width="40">
-        <span>Guarujá-Sp</span>
-    </div>
-
-    <h2>Resumo Profissional</h2>
-    <p>
-        <strong>Estagiário de TI | Suporte Técnico & Infraestrutura</strong><br><br>
-        Estagiário na área de Tecnologia da Informação, com atuação prática em suporte técnico aos usuários, manutenção e diagnóstico de computadores. Responsável pela preparação e montagem de infraestrutura tecnológica em salas de aula para professores, utilizando ferramentas como o Veyon Master para gestão de laboratórios e computadores. Experiência no manuseio de equipamentos como notebooks LM, diagnóstico de hardware/software e resolução de problemas do dia a dia. Proativo, focado na melhoria de processos e em constante evolução no desenvolvimento e gestão de TI.
-    </p>
-
-    <h4>Colégio Ômega</h4>
-   Ensino médio Concluído em 2025
-    
-<h3>Green house</h3>
-inglês básico
-
-<h3>Universidade Santa Cecília</h3>
-Ensino superior em andamento em Bacharelado em Sistema de Informação & Conclusão prevista para 2029
-
-<h2>Soft Skills</h2>
-<ul>
-    <li>Facilidade em trabalhar em equipe e boa comunicação, colaborando de forma eficaz em ambientes de trabalho</li>
-
-    <li>Habilidade em organização e pontualidade</li>
-
-<li>Vontade de aprender e desenvolver novas competências, com disposição para adquirir novos conhecimentos</li>
-
-<li>Facilidade em lidar com pressão</li >
-</ul>
-
-<h2>Hard Skills</h2>
-<ul>
-    <li>Lógica de programação</li>
-
-    <li>Conhecimento em C#</li>
-
-    <li>Conhecimento em Inteligência Artificial (IA)</li>
-
-    <li>Conhecimento em Hardware</li>
-
-<li>Pacote Office</li>
-
-<li>Design no Canva </li>
-<li>Montagem e Manutenção de Computadores: Diagnóstico, montagem e correção de falhas de hardware e software</li>
-
-<li>Suporte Técnico N1: Atendimento a usuários (alunos, professores e administrativo), formatação, instalação de drivers, sistemas operacionais e softwares</li>
-
-<li>Suporte Remoto: Atendimento e resolução de problemas via AnyDesk</li>
-
-<li>Redes de Computadores: Crimpagem, conserto de cabos de rede, configuração e teste de conectividade</li>
-
-<li>Infraestrutura e Ambientes: Montagem e preparação de salas de aula, instalação e configuração de notebooks e projetores</li>
-
-<li>Gerenciamento de Laboratórios: Monitoramento e controle de sala de aula com Veyon Master</li>
-
-<li>Sistemas de Segurança (CFTV): Monitoramento via iVMS-4200 (Hikvision)</li>
-
-<li>Preparação de Ambiente Educacional: Implantação de conteúdo educacional e configuração da Plataforma LM</li>
-
-<li>Apoio à Gestão de Infraestrutura de TI: Organização de almoxarifado, controle de inventário e preparação de equipamentos</li>
-
-</ul>
-<h2>Experiência Profissional</h2>
-<ul>
-    <strong>Estagiário de TI | Colégio Adelia  (31/09/2026 - Presente)</strong><br></br>
-    <li>Suporte Técnico e Infraestrutura: Atendimento a usuários, manutenção de computadores, preparação de salas de aula e gerenciamento de laboratórios</li>
-</ul>
-
-<h2>Atendimento ao Cliente, Vendas e Operações</h2>
-<ul>
-    <li>Atendimento ao Cliente</li>
-    <li>Operação e Produção</li>
-    <li>Gestão de Caixa</li>
-    <li>Controle de Estoque</li>
-</ul>
 </body>
 
 </html>
